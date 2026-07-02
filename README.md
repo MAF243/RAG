@@ -42,4 +42,10 @@ source venv/bin/activate
 WANDB_API_KEY=masukkan_wandb_api_key_anda_disini
 5. Menjalankan AplikasiProyek ini berjalan dengan dua server terpisah (Back-End dan Front-End). Buka dua terminal terpisah (pastikan venv aktif di keduanya).Terminal 1: Jalankan Server Back-End (FastAPI)Bashpython -m uvicorn main:app --reload
 Back-End akan berjalan di: http://127.0.0.1:8000 (Kunjungi /docs untuk Swagger UI)Terminal 2: Jalankan Front-End (Streamlit)Bashpython -m streamlit run ui/app.py
-Aplikasi web Streamlit akan otomatis terbuka di browser pada alamat http://localhost:8501📡 Dokumentasi API (Endpoints)Jika Anda ingin mengonsumsi API ini untuk Front-End lain (misal: React, Vue, atau Mobile App), berikut adalah endpoints yang tersedia:MethodEndpointFungsiPayloadPOST/api/v1/uploadMengunggah, membaca (OCR), dan menyimpan PDF ke ChromaDB.multipart/form-data (file)POST/api/v1/chatMengirim pertanyaan ke AI dan mendapatkan jawaban beserta rujukan.JSON: {"pertanyaan": "Teks"}
+Aplikasi web Streamlit akan otomatis terbuka di browser pada alamat http://localhost:8501
+📡 Dokumentasi API (Endpoints)
+Jika Anda ingin mengonsumsi API ini untuk Front-End lain (misal: React, Vue, atau Mobile App), berikut adalah endpoints yang tersedia:
+| Method | Endpoint | Fungsi | Payload |
+| :--- | :--- | :--- | :--- |
+| `POST` | `/api/v1/upload` | Mengunggah, membaca (OCR), dan menyimpan PDF ke ChromaDB. | `multipart/form-data` (file) |
+| `POST` | `/api/v1/chat` | Mengirim pertanyaan ke AI dan mendapatkan jawaban beserta rujukan. | JSON: `{"pertanyaan": "Teks"}` |
