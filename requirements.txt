@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+python-multipart
+langchain
+langchain-classic
+langchain-google-genai
+langchain-community
+langchain-chroma
+pypdf
+python-dotenv
+streamlit
+rapidocr-onnxruntime

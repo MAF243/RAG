@@ -1,0 +1,39 @@
+# ==========================================
+# 🔐 Environment Variables & Secrets
+# ==========================================
+.env
+
+# ==========================================
+# 🐍 Python & Virtual Environment
+# ==========================================
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ==========================================
+# 🗄️ Database & Vector Store
+# ==========================================
+# Jangan push folder database Chroma ke GitHub karena ukurannya bisa sangat besar
+chroma_db/
+
+# ==========================================
+# 📊 MLOps & Experiment Tracking
+# ==========================================
+# Mengabaikan folder log lokal dari Weights & Biases
+wandb/
+
+# ==========================================
+# 📄 Data & Uploads
+# ==========================================
+# Mengabaikan file PDF agar dokumen pribadi/rahasia tidak ikut ter-push
+#*.pdf
+#uploads/
+
+# ==========================================
+# 💻 OS / System Files
+# ==========================================
+.DS_Store
+Thumbs.db
