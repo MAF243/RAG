@@ -1,0 +1,2 @@
+-r requirements.lock
+wandb==0.30.0
